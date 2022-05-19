@@ -1,2 +1,2 @@
 # My WebGl Playground
-WebGL exmaples mostly using the threejs framework.
+WebGL examples mostly using the threejs framework.
