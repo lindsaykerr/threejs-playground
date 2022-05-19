@@ -1,2 +1,2 @@
-# threejs-playground
-My threejs playgound
+# My WebGl Playground
+WebGL exmaples mostly using the threejs framework.
