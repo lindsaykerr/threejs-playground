@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow: hidden;
+}
+
+.viewer-3d {
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: block;
+}

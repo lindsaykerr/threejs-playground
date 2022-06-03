@@ -1,0 +1,38 @@
+{
+  "name": "threejs-playground",
+  "version": "1.0.0",
+  "description": "My threejs playgound",
+  "private": true,
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --config webpacks/webpack.dev.js --watch",
+    "start": "webpack serve --open --config webpacks/webpack.dev.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lindsaykerr/threejs-playground.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lindsaykerr/threejs-playground/issues"
+  },
+  "homepage": "https://github.com/lindsaykerr/threejs-playground#readme",
+  "devDependencies": {
+    "babel-loader": "^8.2.5",
+    "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1",
+    "three": "^0.140.2",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.0"
+  },
+  "dependencies": {
+    "lil-gui": "^0.16.1"
+  }
+}

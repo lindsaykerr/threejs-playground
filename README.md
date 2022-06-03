@@ -1,2 +1,2 @@
-# threejs-playground
-My threejs playgound
+# Threejs playground
+My Threejs sandbox
