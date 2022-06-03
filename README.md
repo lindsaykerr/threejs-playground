@@ -1,2 +1,3 @@
-# Threejs playground
-My Threejs sandbox
+# WebGl Playground
+WebGL examples mostly using the threejs framework.
+
