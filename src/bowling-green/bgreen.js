@@ -14,8 +14,6 @@ import './helpergui.js';
 
 
 
-
-
 const canvas = document.querySelector("#i01");
 
 
