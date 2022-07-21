@@ -1,5 +1,10 @@
+import * as THREE from 'three';
 
-console.log("hello world");
+const canvasElement = document.querySelector(".viewer-3d");
+console.log(canvasElement)
+
+
+
 
 
 

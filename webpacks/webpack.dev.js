@@ -11,7 +11,7 @@ module.exports = {
         },
         steamEngine: {
             import : './src/steam-engine/engine.js',
-            dependOn: ['three','gui'],
+            dependOn: ['three'],
         },
         three: 'three', 
         gui: 'lil-gui',
@@ -29,12 +29,12 @@ module.exports = {
         new HtmlWebpackPlugin({
           title: 'bowling green',
           filename: "bowling-green.html",
-          chunks: ['three', 'core', 'gui', 'bowlingGreen']
+          excludeChunks: ['steamEngine']
         }),
         new HtmlWebpackPlugin({
             title: 'steam engine',
             filename: "steam-engine.html",
-            chunks: ['three','core','steamEngine'],
+            excludeChunks: ['bowlingGreen'],
           }),
     
       ],
@@ -72,7 +72,7 @@ module.exports = {
         ],
     },
     optimization: {
-        runtimeChunk: true,
+        runtimeChunk: 'single',
         splitChunks: {
             chunks: 'all',
         }
