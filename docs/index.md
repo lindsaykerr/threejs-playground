@@ -2,6 +2,20 @@
 layout: default
 title: "A WebGL Playground"
 ---
-Hello world
+{% for project in site.threejs %}
+<article class="item">
+    <a href="{{project.url}}">
+    {% if project.thumbnail %}
+        <figure>
+            <img src="{{project.thumbnail[0]}}" alt="{{project.thumbnail[1]}}">
+        </figure>
+    {% endif %}
+    <h3 class="title">{{project.title}}</h3> 
+    </a>
+    <div class="date">{{project.date | date: "%-d %B %Y" }}</div>
+    <p>{{project.summary}}</p>
+   
+</article>
+{% endfor %}
 
 

@@ -1,0 +1,23 @@
+<section id="projects">
+    <h2>Current Projects and Archived projects</h2>
+    {% for project in site.projects reversed%}
+        <article class="project">
+            <header>
+            <h3>{{project.title}}</h3>
+            <div class="meta"> 
+                <span class="project-status">
+                    {% if project.active == true %} 
+                        <span class="active">Active</span>
+                    {% else %} 
+                        <span class="inactive">Archived</span>
+                    {% endif %}
+                </span> 
+                <span class="project-yearspan">({{project.year-span}})</span>
+                <span class="project-tech">Tech: {{project.tech | join: ', '}}</span>
+            </div>
+            <a href="{{project.link}}">{{project.link}}</a>
+        </header>
+        {{project.content}}
+        </article>
+    {% endfor%}
+</section>

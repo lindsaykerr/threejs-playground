@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >    
+    {% include head.html %}
+</head>
+<body id="front-page">
+    {% include header.html %}
+    <div class="center-col">
+     
+        <main class="page">    
+            <header>
+                <div class="pic-title">
+                    {% include profile-pic.html%}  
+                    <div class="front-title">{{page.title}}</div>
+                </div>
+            </header>
+            {{content}}
+        </main>
+    </div>
+    {% include footer.html%}
+
+</body>
+</html>

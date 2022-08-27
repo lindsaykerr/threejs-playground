@@ -1,0 +1,7 @@
+
+@mixin large-headings {
+    h1, h2, h3
+    {
+        @content;
+    }
+}

@@ -1,0 +1,14 @@
+{% for post in site.posts limit: include.listlength %}
+    <article class="item">
+        <a href="{{post.url}}">
+        {% if post.thumbnail %}
+            <figure>
+                <img src="{{post.thumbnail[0]}}" alt="{{post.thumbnail[1]}}">
+            </figure>
+        {% endif %}
+        <h3 class="title">{{post.title}}</h3> 
+        <span class="b">{{post.excerpt | strip_html | truncate: 100 }}
+        </span>
+        </a>
+    </article>
+{% endfor %}

@@ -1,0 +1,19 @@
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Lindsay Kerr">
+<meta name="description" content="{{page.description}}">
+<meta name="keywords" content="GitHub, Coding{% if page.keywords %}, {{page.keywords | join:', '}} {% endif%}">
+{% if page.preview == true%}
+    <meta property="og:title" content="{{page.title}}">
+    <meta property="og:description" content="{{page.description}}">
+    <meta property="og:url" content="{{site.url}}{{page.url}}">
+    <meta name="twitter:card" content="summary">
+    {% if page.preview-image %}
+        <meta property="og:image" content="{{site.url}}{{page.preview-image}}">    
+    {% endif%}
+{% endif %}
+<title>{{ page.title }} - {{ site.title }}</title>
+<link rel="icon" type="image/png" href="{{site.url}}/icon.png">
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+

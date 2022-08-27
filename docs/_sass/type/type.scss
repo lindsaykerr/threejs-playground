@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+
+    font-size: 1em;
+
+   
+    line-height: 1.5em;   
+}
+
+p, article, header, footer, ul, ol, h4, h5, h6, header .date {
+    font-family: 'Roboto', serif;
+}
+pre {
+    font-family: none !important;
+    font-family: sans-serif !important;
+}
+
+header .date {
+    color: $fg-color;
+}
+
+a:link {
+    color: $h-color;
+}
+a:active {
+    color: $h-color;
+}
+a:visited {
+    color: $h-color;
+}
+
+p, ul, ol, blockquote {
+    color: white;
+}
+
+p {
+    text-align: justify;
+}
+
+h1,h2,h3, .front-title{
+    font-family: 'Roboto Slab', Courier, monospace;
+}
+
+h1, .front-title {
+    font-size: 1.6em;
+
+    color: $fg-color;
+}
+
+h2 {
+    font-size: 1.6em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+h2, h3, h4, h5, h5 {
+    color: $fg-color;
+}
+
+
+
+.post-list .title{
+    font-weight: bold;
+    font-size: 1.1em;
+    
+}
+
+.project .meta {
+    font-size: .9em;
+    font-weight: bold;
+    color: white;
+}
+
+.page .post-list .item a{
+    text-decoration: none;
+    color: $fg-color;
+}
+.page .post-list .item a:link{
+    color: $fg-color;
+}
+.page .post-list .item a:visited{
+    color: $fg-color !important;
+}
+.page .post-list .item a:hover{
+    color: $bg-color !important;
+}
+
+.page .post-list .item:hover{
+    color: $bg-color !important;
+}
+.page .post-list h2 a{
+    text-decoration: underline;
+}
+.page .post-list h2 a:visited {
+    color: $h-color;
+}
+.page .post-list h2 a:active {
+    color: $h-color;
+}
+.page .post-list h2 a:link {
+    color: $h-color;
+}
+
+.project .active {
+    color: rgb(36, 255, 36);
+}
+  
+.project .inactive {
+    color: rgb(255, 160, 96);
+}
+  
+.project a:visited {
+    color: $h-color;
+}
+
+.project a:link {
+    color: $h-color;
+}
+
+.project a:active {
+    color: $h-color;
+}
+
+.project a:hover {
+    color: $fg-color;
+}
+
+.blog-posts .date {
+    color: $fg-color;
+}
+
+.blog-posts .list-item header a:link {
+    color: $h-color;
+}
+
+.blog-posts .list-item header a:visited {
+    color: $h-color;
+}
+
+.blog-posts .list-item header a:active {
+    color: $h-color;
+}
+
+.current {
+    text-decoration: none;
+    opacity: 0.5;
+}
+a.current:hover {
+    color: $bg-color !important;
+}
+
+.site-logo a {
+    font-family: 'Roboto Slab', Courier, monospace !important;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.site-logo a:link {
+    color: $bg-color;
+}
+
+.site-logo a:active {
+    color: $bg-color;
+}
+
+.site-logo a:visited {
+    color: $bg-color;
+}
+
+.date {
+    color: $fg-color;
+    display: block;
+    text-align: right;
+    font-size: .9em;
+    font-style: italic;
+
+}
+
+
+.site-links a {
+    font-weight: bold;
+}
+.site-links a:link {
+    color: $bg-color;
+}
+
+.site-links a:visited {
+    color: $bg-color;
+}
+.site-links a:hover, .site-links a:active {
+    color: $h-color;
+}
+
+.front-title {
+    font-size: 1.4em;
+}
+
+.main-footer * {
+
+    font-size: small;
+    text-align: center;
+}
+
+.main-footer a {
+    font-weight: bold !important;
+}
+.main-footer a:link{
+    color: $bg-color;
+}
+.main-footer a:active{
+    color: $bg-color;
+}
+.main-footer a:visited{
+    color: $bg-color;
+}

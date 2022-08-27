@@ -9,7 +9,7 @@ module.exports = {
         },
         steamEngine: {
             import : './src/steam-engine/engine.js',
-            dependOn: ['three','gui'],
+            dependOn: ['three', 'gui'],
         },
         three: 'three', 
         gui: 'lil-gui',

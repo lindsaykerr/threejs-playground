@@ -63,7 +63,7 @@ module.exports = {
                 ]
             },
             {
-                test: /\.glb/,
+                test: /\.(glb|gltf)/,
                 type: 'asset/resource',
                 generator: {
                     filename: 'assets/gltf/[hash][ext][query]',

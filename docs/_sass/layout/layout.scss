@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: $h-color;
+}
+
+body {
+    background-color: $bg-color;
+}  
+
+  
+body>footer {
+    background-color: $h-color;
+}
+
+body>header {
+    background-color: $fg-color;
+}
+
+main {
+    margin: 0 auto;
+    background-color: $bg-color;
+}
+
+.center-col {  
+
+    padding: 15px;
+    padding-top: 5px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+
+article header, .post header {
+    margin-bottom: 10px;
+}
+
+  
+li {
+    margin-left: 2em;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+h1, h2, h3, h4, h5, h6, .front-title {
+    margin-top: 1em;
+    margin-bottom: 0.3em;
+}
+
+h1, .front-title {
+    display: inline-block;
+    padding: 5px 20px;
+
+    background-color: $bg-color;
+    box-shadow: 5px 5px 0px $h-color;
+    border-radius: 2px;
+}
+
+
+
+.post-list img {
+    width: 100%;
+}
+
+.page>header {
+    margin-bottom: 20px;
+}
+
+.page .post-list .item {
+    box-sizing: border-box;
+    border-radius: 3px;
+    background-color: $bg-color;
+    box-shadow: 0px 5px 0 $h-color;
+    border: 1px solid $fg-color;
+}
+.page .post-list .item {
+    max-width: 300px;
+    margin-bottom: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.page .post-list .item a {
+    display: block;
+    padding: 10px;
+    height: 100%;
+}
+.page .post-list .item:hover {
+    background-color: $h-color;
+    box-shadow: none;
+    border: 1px solid $bg-color;
+}
+
+.page .post-list .container {
+    margin-top: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+} 
+
+body>header {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.main-nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.profile img{    
+    display: block;
+    border-radius: 50%;
+    //border: 1px solid black;
+    box-shadow: 3px 3px 0 $h-color;    
+    width: 100%;
+    height: auto;
+}
+ 
+.pic-title {
+    //border: 1px solid white;
+    width: 290px;
+    height: 160px;
+    position: relative;
+    
+}
+
+.post-image {
+    display: inline-block;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 0 $h-color;
+    margin: 10px;
+    margin-bottom: 30px;
+}
+.post-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+
+}
+
+
+
+.profile {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+
+}
+.front-title {
+    position:absolute;
+    left: 100px;
+    top: 30px
+}
+
+#projects img {
+    
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 3px;
+    border: 1px solid white;
+    box-shadow: 5px 5px 0 $h-color;
+    
+}
+#projects a img {
+    box-shadow: 5px 5px 0 $fg-color !important;
+}
+
