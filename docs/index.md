@@ -2,6 +2,7 @@
 layout: default
 title: "A WebGL Playground"
 ---
+<div class="demo">
 {% for project in site.threejs %}
 <article class="item">
     <a href="{{site.baseurl}}/{{project.url}}">
@@ -17,5 +18,6 @@ title: "A WebGL Playground"
    
 </article>
 {% endfor %}
+</div>
 
 
