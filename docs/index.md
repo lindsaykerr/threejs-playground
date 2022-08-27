@@ -4,10 +4,10 @@ title: "A WebGL Playground"
 ---
 {% for project in site.threejs %}
 <article class="item">
-    <a href="{{project.url}}">
+    <a href="{{site.baseurl}}/{{project.url}}">
     {% if project.thumbnail %}
         <figure>
-            <img src="{{project.thumbnail[0]}}" alt="{{project.thumbnail[1]}}">
+            <img src="{{site.baseurl}}/{{project.thumbnail[0]}}" alt="{{project.thumbnail[1]}}">
         </figure>
     {% endif %}
     <h3 class="title">{{project.title}}</h3> 
