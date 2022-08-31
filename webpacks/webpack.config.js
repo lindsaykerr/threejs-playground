@@ -11,6 +11,10 @@ module.exports = {
             import : './src/steam-engine/engine.js',
             dependOn: ['three', 'gui'],
         },
+        windFarm: {
+            import : './src/steam-engine/wind-farm-sim.js',
+            dependOn: ['three', 'gui'],
+        },
         three: 'three', 
         gui: 'lil-gui',
     },

@@ -13,6 +13,10 @@ module.exports = {
             import : './src/steam-engine/engine.js',
             dependOn: ['three'],
         },
+        windFarm: {
+            import : './src/wind-farm-sim/wind-farm-sim.js',
+            dependOn: ['three', 'gui'],
+        },
         three: 'three', 
         gui: 'lil-gui',
     },
@@ -29,13 +33,18 @@ module.exports = {
         new HtmlWebpackPlugin({
           title: 'bowling green',
           filename: "bowling-green.html",
-          excludeChunks: ['steamEngine']
+          excludeChunks: ['steamEngine, WindFarm']
         }),
         new HtmlWebpackPlugin({
             title: 'steam engine',
             filename: "steam-engine.html",
-            excludeChunks: ['bowlingGreen'],
+            excludeChunks: ['bowlingGreen, windFarm'],
           }),
+        new HtmlWebpackPlugin({
+            title: 'Wind Farm Sim',
+            filename: "wind-farm-sim.html",
+            excludeChunks: ['bowlingGreen', 'steamEngine'],
+        }),
     
       ],
      
